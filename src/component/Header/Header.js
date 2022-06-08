@@ -43,11 +43,11 @@ function Header(props) {
                                 </li>
                                 <li className="main-menu__item relative group">
                                     {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="about-us.html">About-Us</a> */}
-                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/blog"}>About-Us</NavLink>
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/about"}>About-Us</NavLink>
                                 </li>
                                 <li className="main-menu__item">
                                     {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="contact-us.html">Contact</a> */}
-                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/blog"}>Contact</NavLink>
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/contact"}>Contact</NavLink>
                                     </li>
                             </ul>
                         </nav>
