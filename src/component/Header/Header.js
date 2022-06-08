@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -14,26 +15,40 @@ function Header(props) {
                                 <li className="main-menu__item relative group">
                                     <a className="block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="https://htmldemo.net/">Home</a>
                                     <ul className="submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max">
-                                        <li className="my-3"><a className="text-dark font-normal text-base capitalize transition-all hover:text-orange" href="index.html">Airpod</a></li>
+                                        <li className="my-3">
+                                            {/* <a className="text-dark font-normal text-base capitalize transition-all hover:text-orange" href="index.html">Airpod</a> */}
+                                            <NavLink exact className="text-dark font-normal text-base capitalize transition-all hover:text-orange" to={"/"}>Airpod</NavLink> 
+                                            </li>
                                     </ul>
                                 </li>
                                 <li className="main-menu__item group">
                                     <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="#">Shop</a>
                                     <ul className="mega-menu flex flex-wrap bg-white py-5 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10">
                                         <li className="flex-auto px-4">
-                                            <a className="font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange" href="shop-list.html">shop list</a>
+                                            {/* <a className="font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange" href="shop-list.html">shop list</a> */}
+                                            <NavLink exact className="font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange" to={"/shop"}>shop list</NavLink>
                                             <ul className="pb-2">
-                                                <li className="my-3"><a className="font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all" href="shop-list.html">Shop List</a></li>
+                                                <li className="my-3">
+                                                    {/* <a className="font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all" href="shop-list.html">Shop List</a> */}
+                                                    <NavLink exact className="font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all" to={"/shop"}>shop list</NavLink>
+                                                    </li>
                                             </ul>
                                         </li>
                                         <li className="overflow-hidden flex-auto mx-4"><a href="#"><img className="transform hover:scale-105 transition-all w-full" src="assets/images/mega-menu/megamenu.webp" alt="Smartwatch" loading="lazy" width={1000} height={120} /></a></li>
                                     </ul>
                                 </li>
-                                <li className="main-menu__item relative group"><a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="blog.html">Blog</a>
+                                <li className="main-menu__item relative group">
+                                    {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="blog.html">Blog</a> */}
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/blog"}>Blog</NavLink>
                                 </li>
-                                <li className="main-menu__item relative group"><a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="about-us.html">About-Us</a>
+                                <li className="main-menu__item relative group">
+                                    {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="about-us.html">About-Us</a> */}
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/blog"}>About-Us</NavLink>
                                 </li>
-                                <li className="main-menu__item"><a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="contact-us.html">Contact</a></li>
+                                <li className="main-menu__item">
+                                    {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="contact-us.html">Contact</a> */}
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/blog"}>Contact</NavLink>
+                                    </li>
                             </ul>
                         </nav>
                     </div>
