@@ -48,6 +48,7 @@ function Header(props) {
                                 <li className="main-menu__item">
                                     {/* <a className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" href="contact-us.html">Contact</a> */}
                                     <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/contact"}>Contact</NavLink>
+                                    <NavLink exact className="block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all" to={"/product"}>Products</NavLink>
                                     </li>
                             </ul>
                         </nav>

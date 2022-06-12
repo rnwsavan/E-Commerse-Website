@@ -8,6 +8,7 @@ import About from './container/Pages/About';
 import Blog from './container/Pages/Blog';
 import Contact from './container/Pages/Contact';
 import Shop from './container/Pages/Shop';
+import Products from './container/Pages/Products';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <Route exact path={"/blog"} component={Blog}/>
      <Route exact path={"/contact"} component={Contact}/>
      <Route exact path={"/shop"} component={Shop}/>
+     <Route exact path={"/product"} component={Products}/>
    </switch>
    <Footer/>
    </>
