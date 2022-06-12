@@ -8,7 +8,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import * as yup from 'yup';
-import { Form, Formik, FormikConsumer, FormikProvider, useFormik } from 'formik';
+import { Form, Formik, useFormik } from 'formik';
 import { DataGrid } from '@mui/x-data-grid';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -161,16 +161,14 @@ function Products(props) {
         <Box>
         <Container>
             <div>
-
-
                 <center>
-                    <h1 className='mb-5'>Medicines</h1>
-                    <Button className='mt-5' variant="outlined" onClick={handleClickOpen}>
-                        Add Medicine
+                <Button style={{ margin: '120px' }}  variant="outlined" onClick={handleClickOpen}>
+                        Add Products
                     </Button>
                 </center>
+                    
 
-                <div style={{ height: 400, width: '100%', margin: '30px' }}>
+                <div style={{ height: 400, width: '100%'}}>
                     <DataGrid
                         rows={data}
                         columns={columns}
@@ -180,7 +178,7 @@ function Products(props) {
                     />
                 </div>
                 <Dialog open={open} onClose={handleClose}>
-                    <DialogTitle>Add Medicine</DialogTitle>
+                    <DialogTitle>Add Products Data</DialogTitle>
                     <Formik value={formik}>
                         <Form onSubmit={formik.handleSubmit}>
                             <DialogContent>
